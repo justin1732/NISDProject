@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://www.nisd.net/district/programs -->
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#" class="js fontawesome-i2svg-active fontawesome-i2svg-complete" style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="./Programs _ Northside Independent School District_files/531ba1842f"></script><script type="text/javascript" src="./Programs _ Northside Independent School District_files/heatmaps.js.download"></script><script src="./Programs _ Northside Independent School District_files/nr-1208.min.js.download"></script><script type="text/javascript" async="" src="./Programs _ Northside Independent School District_files/linkid.js.download"></script><script type="text/javascript" async="" src="./Programs _ Northside Independent School District_files/analytics.js.download"></script><script async="" src="./Programs _ Northside Independent School District_files/fbevents.js.download"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"531ba1842f",applicationID:"460248409"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(7),c=e(8),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(9);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e){return!(!e||!e.protocol||"file:"===e.protocol)}t.exports=r},{}],4:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(6),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],5:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],6:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],7:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],8:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],9:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(7),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=x.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=e(2),c=e("handle"),f=e(7),u=e("ee"),s=e(5),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,w=g&&g.prototype;if(d(p.location)){NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1208.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:b,userAgent:s};e(1),e(4),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(8),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<script async="" src="./Programs _ Northside Independent School District_files/js"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("config", "UA-1050833-1", {"groups":"default","anonymize_ip":true,"link_attribution":true});</script>
+<meta name="geo.placename" content="San Antonio, Texas">
+<meta name="geo.position" content="29.416667;-98.5">
+<meta name="geo.region" content="US-TX">
+<meta name="icbm" content="29.416667,-98.5">
+<style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}</style><link rel="canonical" href="https://www.nisd.net/district/programs">
+<meta http-equiv="content-language" content="en-US">
+<meta name="dcterms.title" content="Programs">
+<meta name="dcterms.creator" content="e077256">
+<meta name="audience" content="all">
+<meta property="og:site_name" content="Northside ISD">
+<meta property="og:type" content="Education">
+<meta property="og:title" content="Programs">
+<meta property="og:description" content="At Northside ISD we believe every student deserves the highest quality education. Students are offered an education which honors their voice and prepares them to engage, contribute, and succeed.">
+<meta property="og:updated_time" content="2021-04-16T13:02:00-05:00">
+<meta property="place:location:latitude" content="29.416667">
+<meta property="place:location:longitude" content="-98.5">
+<meta property="og:street_address" content="5900 Evers Road">
+<meta property="og:locality" content="San Antonio">
+<meta property="og:postal_code" content="78238">
+<meta property="og:country_name" content="United States">
+<meta property="og:phone_number" content="210-397-8500">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@NISD">
+<meta name="twitter:title" content="Programs">
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript">window._monsido = window._monsido || {"token":"5AbXVVDYQWuP7D6dzXXpgg","statistics":{"enabled":true,"documentTracking":{"enabled":true,"documentCls":"monsido_download","documentIgnoreCls":"monsido_ignore_download","documentExt":["pdf","doc","ppt","docx","pptx"]}},"heatmap":{"enabled":true}};</script>
+<script async="" src="./Programs _ Northside Independent School District_files/monsido-script.js.download"></script>
+<script type="text/javascript">!function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window,document,'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '340002194100707'); fbq('track', 'PageView');</script>
+<noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=340002194100707&amp;ev=PageView&amp;noscript=1" /></noscript>
+<link rel="shortcut icon" href="https://www.nisd.net/themes/custom/ochonix/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="revision" href="https://www.nisd.net/district/programs">
+
+    <title>Programs |   Northside Independent School District</title>
+    <link rel="stylesheet" media="all" href="./Programs _ Northside Independent School District_files/css_eE7bIUc-Qz__OkhmebXgY-Ckerlgq7Gow4e_0_yrgtY.css">
+<link rel="stylesheet" media="all" href="./Programs _ Northside Independent School District_files/css_U9pM4ji2DsotKrozZ5BXCZI28eaiM_3Zv25Rvy--U20.css">
+<link rel="stylesheet" media="all" href="./Programs _ Northside Independent School District_files/css">
+<link rel="stylesheet" media="all" href="./Programs _ Northside Independent School District_files/css(1)">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+  <link type="text/css" rel="stylesheet" charset="UTF-8" href="./Programs _ Northside Independent School District_files/translateelement.css"><script type="text/javascript" charset="UTF-8" src="./Programs _ Northside Independent School District_files/main.js.download"></script><link href="./Programs _ Northside Independent School District_files/css2" rel="stylesheet"><script type="text/javascript" charset="UTF-8" src="./Programs _ Northside Independent School District_files/element_main.js.download"></script></head><span id="warning-container"><i data-reactroot=""></i></span>
+  <body class="path-node page-node-type-page navbar-is-static-top has-glyphicons" style="position: relative; min-height: 100%; top: 0px;">
+    <a href="https://www.nisd.net/district/programs#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    
+      
+  
+        <div class="region region-highlighted">
+    <div data-drupal-messages-fallback="" class="hidden"></div>
+
+  </div>
+
+  
+
+  
+
+<div class="logo">
+  <a href="https://www.nisd.net/" title="Home" rel="home">
+    <img src="./Programs _ Northside Independent School District_files/logo.svg" alt="Return to homepage">
+  </a>
+</div>
+
+          <header class="navbar navbar-default navbar-static-top" id="navbar" role="banner">
+      <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <!-- For Reference: To make the hamburger spin -->
+          <div class="spinner-master2">
+          <input type="checkbox" label="navigation for mobile menu" id="spinner-form2">
+            <label for="spinner-form2" label="mobile navigation button" class="spinner-spin2">
+              MENU
+              <div class="spinner2 diagonal part-1"></div>
+              <div class="spinner2 horizontal"></div>
+              <div class="spinner2 diagonal part-2"></div>
+            </label>
+          </div>
+        </button>
+      </div>
+      <div id="navbar-collapse" class="navbar-collapse collapse">
+          <div class="region region-navigation">
+    <nav role="navigation" aria-labelledby="block-main-navigation-menu" id="block-main-navigation" class="block-type-main">
+            <h2 class="sr-only" id="block-main-navigation-menu">Main navigation</h2>
+
+      
+      <ul class="menu menu--main nav navbar-nav">
+                      <li class="first">
+                                                  <a href="https://www.nisd.net/district" class="district" data-drupal-link-system-path="node/8856">District</a>
+                      </li>
+                      <li>
+                                                  <a href="https://www.nisd.net/schools" class="schools" data-drupal-link-system-path="node/6">Schools</a>
+                      </li>
+                      <li>
+                                                  <a href="https://www.nisd.net/contact" class="contact separator" data-drupal-link-system-path="node/11">Contact</a>
+                      </li>
+                      <li>
+                                                  <div id="google_translate_element"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap;"><img src="./Programs _ Northside Independent School District_files/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"><span style="vertical-align: middle;"><a aria-haspopup="true" class="goog-te-menu-value" href="javascript:void(0)"><span>Select Language</span><img src="./Programs _ Northside Independent School District_files/cleardot.gif" alt="" width="1" height="1"><span style="border-left: 1px solid rgb(187, 187, 187);">​</span><img src="./Programs _ Northside Independent School District_files/cleardot.gif" alt="" width="1" height="1"><span aria-hidden="true" style="color: rgb(118, 118, 118);">▼</span></a></span></div></div></div>
+                      </li>
+                      <li class="last">
+                                                  <a href="https://www.nisd.net/search" class="search" data-drupal-link-system-path="search">Search</a>
+                      </li>
+        </ul>
+  
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-hubs-menu" id="block-hubs" class="block-type-hubs">
+            
+  <h2 class="visually-hidden" id="block-hubs-menu">Hubs</h2>
+  
+
+        
+      <ul class="menu menu--hubs nav">
+                      <li class="first">
+                                        <a href="https://www.nisd.net/parents" class="parents" data-drupal-link-system-path="node/8741">Parents</a>
+              </li>
+                      <li>
+                                        <a href="https://www.nisd.net/students" class="students" data-drupal-link-system-path="node/8886">Students</a>
+              </li>
+                      <li>
+                                        <a href="https://www.nisd.net/community" class="community" data-drupal-link-system-path="node/8761">Community</a>
+              </li>
+                      <li class="last">
+                                        <a href="https://nisd.net/employees/" class="employees">Employees</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+      </div>
+    </header>
+  
+  <div role="main" class="main-container container-fluid js-quickedit-main-content">
+
+        
+                <div class="region region-pageprefix">
+        <h1 class="page-header"><span>Programs</span>
+</h1>
+
+    <ol class="breadcrumb">
+          <li>
+                  <a href="https://www.nisd.net/">Home</a>
+              </li>
+          <li>
+                  <a href="https://www.nisd.net/district">District</a>
+              </li>
+          <li class="active">
+                  Programs
+              </li>
+      </ol>
+
+
+  </div>
+
+    
+        
+              <a id="main-content"></a>
+        <div class="region region-content">
+      <article role="article" class="page full clearfix">
+
+  
+    
+
+  
+  <div class="content">
+    <div class="row bs-1col">
+  
+  <div class="col-sm-12 bs-region bs-region--main">
+    <section class="block-type-hero-image block block-layout-builder block-inline-blockhero-image clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-hero-image field--type-image field--label-hidden field--item"> <picture>
+             <img src="./47.jpg" alt="Students in NASA gear" class="img-responsive">
+  </picture>
+
+</div>
+      
+  </section>
+
+
+  </div>
+</div>
+<div class="lr-padding pt-30 pb-30 row bs-1col">
+  
+  <div class="col-sm-12 bs-region bs-region--main">
+    <section class="block-type-block-basic block block-layout-builder block-inline-blockblock-basic clearfix">
+  
+      <h2 class="block-title">District Programs</h2>
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>This page provides information on the different programs offered. In addition to the resources provided on this&nbsp;page, campus websites have important information specific to the campus.&nbsp; Be sure to&nbsp;<a href="http://prod.nisd.net/schools">visit your campus website</a>.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+</div>
+<div class="lr-padding equal special-gutters pt-20 pb-20 row bs-2col">
+  
+
+    <div class="students-light-bg-color col-sm-6 bs-region bs-region--left">
+    <section class="block-type-block-info-card block block-layout-builder block-inline-blockblock-info-card clearfix">
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">After School Education</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item">Northside School District’s After School Program(s) offer opportunities for children to access academic enrichment, social, and recreational experiences in a safe and supervised environment.</div>
+      
+            <div class="field field--name-field-cta-link field--type-link field--label-hidden field--item"><a href="https://www.nisd.net/district/after-school">Read more about After School Education</a></div>
+      
+  </section>
+  </div>
+  
+    <div class="students-light-bg-color col-sm-6 bs-region bs-region--right">
+    <section class="block-type-block-info-card block block-layout-builder block-inline-blockblock-info-card clearfix">
+  <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Career &amp; Technical Education</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item">High school and middle school students in Northside’s Career and Technical​ Education (CTE) programs spend much of their time learning through a hands-on approach that prepares students for occupations and further study.
+</div>
+      
+            <div class="field field--name-field-cta-link field--type-link field--label-hidden field--item"><a href="https://www.nisd.net/district/cte">Read more about Career &amp; Technical Education</a></div>
+      
+  </section>
+
+  </div>
+  
+</div>
+<div class="lr-padding equal special-gutters pt-20 pb-20 row bs-2col">
+  
+
+    <div class="parents-bg-color col-sm-6 bs-region bs-region--left">
+    <section class="block-type-block-info-card block block-layout-builder block-inline-blockblock-info-card clearfix">
+  <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Dyslexia</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Northside Independent School District is committed to providing students identified with dyslexia appropriate research based instruction and academic support to prepare them to be successful, lifetime readers and writers with a district-wide plan.</p>
+</div>
+                  <div class="field field--name-field-cta-link field--type-link field--label-hidden field--item"><a href="https://www.nisd.net/district/dyslexia">Read more about Dyslexia and the Dyslexia handbook</a></div>
+      
+  </section>
+  </div>
+ <div class="parents-bg-color col-sm-6 bs-region bs-region--right">
+    <section class="block-type-block-info-card block block-layout-builder block-inline-blockblock-info-card clearfix">
+           
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Fine Arts</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>District curriculum opportunities include student participation in visual arts, band, choir, dance, mariachi, orchestra, and theater. Other enrichment courses include music theater production, music theory, music history, vocal and jazz ensemble, and a variety of other medium-specific courses in visual arts. Advanced Placement is available in Art History and Music Theory. Northside also has an established elementary art and music curriculum to be taught only by certified art and music instructors K-5 to all elementary campuses.</p></div>
+      
+            <div class="field field--name-field-cta-link field--type-link field--label-hidden field--item"><a href="https://www.nisd.net/district/fine-arts">Read more about Fine Arts</a></div>
+      
+  </section>
+
+  </div>
+  
+</div>
+<div class="lr-padding equal special-gutters pt-20 pb-20 row bs-2col">
+  
+
+    <div class="parents-bg-color col-sm-6 bs-region bs-region--left">
+    <section class="block-type-block-info-card block block-layout-builder block-inline-blockblock-info-card clearfix">
+ 
+     
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Gifted &amp; Talented</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item">The GT/Advanced Academics department provides unique programs that nurture the abilities of high performing students while fostering parent and community involvement by building a challenging learning environment that encourages life-long learning, nurtures high self-esteem, expands access to higher education, and provides experiences that enable students to reach their fullest potential as independent thinkers.</div>
+      
+            <div class="field field--name-field-cta-link field--type-link field--label-hidden field--item"><a href="https://www.nisd.net/district/gifted-talented">Read more about Gifted &amp; Talented/Advanced Academics</a></div>
+      
+  </section>
+
+  </div>
+  
+    <div class="parents-bg-color col-sm-6 bs-region bs-region--right">
+    <section class="block-type-block-info-card block block-layout-builder block-inline-blockblock-info-card clearfix">
+  
+    
+
+     
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Psychological Services &amp; Child Find</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Most children reach developmental milestones at about the same rate. However, some children may be delayed in some areas and require assistance.&nbsp; Other children may exhibit significant speech/language, health, physical, mental or emotional problems which can negatively affect their educational progress. These children may be helped through Child Find.</p>
+</div>
+      
+            <div class="field field--name-field-cta-link field--type-link field--label-hidden field--item"><a href="https://www.nisd.net/programs/child-find">Read more about Psychological Services &amp; Child Find</a></div>
+      
+  </section>
+
+  </div>
+  
+</div>
+<div class="lr-padding equal special-gutters pt-20 pb-20 row bs-2col">
+  
+
+    <div class="employees-bg-color col-sm-6 bs-region bs-region--left">
+      
+    <section class="block-type-block-info-card block block-layout-builder block-inline-blockblock-info-card clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Section 504</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Section 504 is a federal law designed to protect the rights of individuals with disabilities in programs and activities that receive federal funds from the U.S. Department of Education (ED).&nbsp;Section 504 provides: "No otherwise qualified individual with a disability in the United States . . . shall solely by reason of her or his disability, be excluded from the participation in, be denied the benefits of, or be subjected to discrimination under any program or activity receiving Federal financial assistance . . . ."&nbsp;</p>
+
+<ul class="mb-0 pb-0">
+	<li>Section 504 Brochure<strong> </strong><a href="https://www.nisd.net/sites/default/files/documents/504brochure.pdf">(English)</a> / <a href="https://www.nisd.net/sites/default/files/documents/504brochure_sp.pdf">(Spanish)</a></li>
+</ul>
+</div>
+      
+            <div class="field field--name-field-cta-link field--type-link field--label-hidden field--item"><a href="https://www.nisd.net/district/section-504">Read more about Section 504</a></div>
+      
+  </section>
+
+  </div>
+  
+    <div class="employees-bg-color col-sm-6 bs-region bs-region--right">
+    <section class="block-type-block-info-card block block-layout-builder block-inline-blockblock-info-card clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Special Education</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item">For those students who are having difficulty in the regular classroom, all school districts and open enrollment charter schools must consider tutorial, compensatory, and other academic or behavior support services that are available to all students, including a process based on Response to Intervention (RtI). RtI has the potential to have a positive impacts to meet the needs of all struggling students.</div>
+      
+            <div class="field field--name-field-cta-link field--type-link field--label-hidden field--item"><a href="https://www.nisd.net/district/special-education">Read more about Special Education</a></div>
+      
+  </section>
+
+  </div>
+  
+</div>
+<div class="lr-padding equal special-gutters pt-20 row bs-2col">
+  
+
+    <div class="community-bg-color col-sm-6 bs-region bs-region--left">
+    <section class="block-type-block-info-card block block-layout-builder block-inline-blockblock-info-card clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Teaching &amp; Learning</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item">The Teaching and Learning department consists of four offices - Academic Technology, Leadership Development, Library Services and Instructional Materials, and Professional Learning. Our goal is to serve teachers, leaders, staff and parents by providing quality professional learning, technical assistance and systemic support.</div>
+      
+            <div class="field field--name-field-cta-link field--type-link field--label-hidden field--item"><a href="https://www.nisd.net/district/teaching-learning">Read more about Teaching &amp; Learning</a></div>
+      
+  </section>
+
+  </div>
+  
+    <div class="community-bg-color col-sm-6 bs-region bs-region--right">
+    <section class="block-type-block-info-card block block-layout-builder block-inline-blockblock-info-card clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Testing &amp; Evaluation</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item">The Department of Testing &amp; Evaluation in Northside ISD is comprised of two (2) distinct components: Testing and Evaluation.</div>
+      
+            <div class="field field--name-field-cta-link field--type-link field--label-hidden field--item"><a href="https://www.nisd.net/district/testing-evaluation">Read more about Testing &amp; Evaluation</a></div>
+      
+  </section>
+
+  </div>
+  
+</div>
+<div class="lr-padding default-font-color students-dark-bg-color edge--top--reverse row bs-3col-bricked">
+  <h2 class="block-inline-blockblock-button">Special Links</h2>
+         
+  <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>The links below provide additonal information for special topics. Be sure to also visit your campus website for any relevant information.</p></div>
+<div class="lr-padding pt-10 row bs-2col">
+  
+
+    <div class="col-sm-6 bs-region bs-region--left">
+    <section class="block-type-block-button block block-layout-builder block-inline-blockblock-button clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-button field--type-link field--label-hidden field--item"><a href="https://nisd.net/athletics/" class="btn btn--block btn--shadow btn-default">Athletics</a></div>
+      
+  </section>
+
+<section class="block-type-block-button block block-layout-builder block-inline-blockblock-button clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-button field--type-link field--label-hidden field--item"><a href="https://nisd.net/bilingual-esl/" class="btn btn--block btn--shadow btn-default">Bilingual &amp; ESL</a></div>
+      
+  </section>
+
+<section class="block-type-block-button block block-layout-builder block-inline-blockblock-button clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-button field--type-link field--label-hidden field--item"><a href="https://nisd.net/guidance-counseling/gc/home" class="btn btn--block btn--shadow btn-default">Counseling</a></div>
+      
+  </section>
+
+
+  </div>
+  
+    <div class="col-sm-6 bs-region bs-region--right">
+    <section class="block-type-block-button block block-layout-builder block-inline-blockblock-button clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-button field--type-link field--label-hidden field--item"><a href="https://nisd.net/library/" class="btn btn--block btn--shadow btn-default">Library</a></div>
+      
+  </section>
+
+<section class="block-type-block-button block block-layout-builder block-inline-blockblock-button clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-button field--type-link field--label-hidden field--item"><a href="https://nisd.net/guidance-counseling/military-families/home" class="btn btn--block btn--shadow btn-default">Military Families</a></div>
+      
+  </section>
+
+<section class="block-type-block-button block block-layout-builder block-inline-blockblock-button clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-button field--type-link field--label-hidden field--item"><a href="https://nisd.net/state-federal/school-age-parenting-program" class="btn btn--block btn--shadow btn-default">State &amp; Federal Programs</a></div>
+      
+  </section>
+
+</div>
+  </div>
+  
+</div>
+<div class="diagonal-lr-employees-bg-color block-type-block-action-callout row bs-1col">
+  
+  <div class="col-sm-12 bs-region bs-region--main">
+    <section class="block-type-_48b1783-1bc2-430e-939d-9cbc4c0a2545 block block-block-content block-block-content648b1783-1bc2-430e-939d-9cbc4c0a2545 clearfix">
+  
+    
+
+      <div class="vertical-align-all row bs-2col">
+  
+
+    <div class="col-sm-8 bs-region bs-region--left">
+    <section class="block-type-block-contentblock-action-calloutfield-callout block block-layout-builder block-field-blockblock-contentblock-action-calloutfield-callout clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-callout field--type-string field--label-hidden field--item">Do you have any questions or comments?</div>
+      
+  </section>
+
+
+  </div>
+  
+    <div class="col-sm-4 bs-region bs-region--right">
+    <section class="block-type-block-contentblock-action-calloutfield-cta-link block block-layout-builder block-field-blockblock-contentblock-action-calloutfield-cta-link clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-cta-link field--type-link field--label-hidden field--item"><a href="https://www.nisd.net/contact">Contact us!</a></div>
+      
+  </section>
+
+
+  </div>
+  
+</div>
+
+  </section>
+
+
+  </div>
+  </div
+</div>
+<div class="action-grid equal row bs-1col">
+  
+  <div class="col-sm-12 bs-region bs-region--main">
+    <section class="block-type-_a431562-dcd0-431b-839f-11073cd76675 block block-block-content block-block-content7a431562-dcd0-431b-839f-11073cd76675 clearfix">
+  
+    
+
+      
+
+      <div class="equal field field--name-field-block field--type-entity-reference field--label-hidden field--items">
+              <div class="col-sm-3 field--item cta-section animated block-type-block-info-card skewed">
+            <div class="field field--name-field-icon-image field--type-image field--label-hidden field--item">    <picture>
+                 
+                  <img src="./menu.jpg" alt="" class="img-responsive">
+
+  </picture>
+
+</div>
+      
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Cafeteria Menus</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p><a href="https://www.nisd.net/schools/menus">Cafeteria Menus</a></p>
+</div>
+      </div>
+              <div class="col-sm-3 field--item cta-section animated block-type-block-info-card skewed">
+            <div class="field field--name-field-icon-image field--type-image field--label-hidden field--item">    <picture>
+               
+              
+                  <img src="./calendar.jpg" alt="" class="img-responsive">
+
+  </picture>
+
+</div>
+      
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Calendars</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p><a href="https://www.nisd.net/schools/calendars">Calendars</a></p></div>
+      </div>
+              <div class="col-sm-3 field--item cta-section animated block-type-block-info-card skewed">
+            <div class="field field--name-field-icon-image field--type-image field--label-hidden field--item">    <picture>
+                
+                  <img src="./book.jpg" class="img-responsive">
+
+  </picture>
+
+</div>
+      
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Registration</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p><a href="https://www.nisd.net/schools/registration">Registration</a></p></div>
+      </div>
+              <div class="col-sm-3 field--item cta-section animated block-type-block-info-card skewed">
+            <div class="field field--name-field-icon-image field--type-image field--label-hidden field--item">    <picture>
+                               
+                  <img src="./medkit.jpg" alt="" class="img-responsive">
+
+  </picture>
+
+</div>
+      
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Health &amp; Vaccination Forms</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p><a href="https://www.nisd.net/schools/health">Health &amp; Vaccination Forms</a></p></div>
+      </div>
+          </div>
+  
+  </section>
+
+<section class="block-type-_e968830-6277-4060-8cd3-aea6c0f08cc1 block block-block-content block-block-content2e968830-6277-4060-8cd3-aea6c0f08cc1 clearfix">
+    
+      <div class="equal field field--name-field-block field--type-entity-reference field--label-hidden field--items">
+              <div class="col-sm-3 field--item cta-section animated block-type-block-info-card skewed">
+            <div class="field field--name-field-icon-image field--type-image field--label-hidden field--item">    <picture>
+                        <img src="./bus.jpg" alt="" class="img-responsive">
+
+  </picture>
+
+</div>
+      
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Buses &amp; Boundaries</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p><a href="https://www.nisd.net/schools/buses">Buses &amp; Boundaries</a></p></div>
+      </div>
+              <div class="col-sm-3 field--item cta-section animated block-type-block-info-card skewed">
+            <div class="field field--name-field-icon-image field--type-image field--label-hidden field--item">    <picture>
+                 
+                  <img src="./apple.png" alt="" class="img-responsive">
+
+  </picture>
+
+</div>
+      
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">District Programs</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p><a href="https://www.nisd.net/district/programs">Programs</a></p></div>
+      </div>
+              <div class="col-sm-3 field--item cta-section animated block-type-block-info-card skewed">
+            <div class="field field--name-field-icon-image field--type-image field--label-hidden field--item">    <picture>
+           
+                  <img src="./police.jpg" alt="" class="img-responsive">
+
+  </picture>
+
+</div>
+      
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Safeline</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p><a href="https://www.nisd.net/safeline">Safeline</a></p></div>
+      </div>
+              <div class="col-sm-3 field--item cta-section animated block-type-block-info-card skewed">
+            <div class="field field--name-field-icon-image field--type-image field--label-hidden field--item">    <picture>
+               
+                  <img src="./cap.png" alt="" class="img-responsive">
+
+  </picture>
+
+</div>
+      
+            <div class="field field--name-field-headline field--type-string field--label-hidden field--item">Graduation</div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p><a href="https://www.nisd.net/schools/graduation">Graduation</a></p></div>
+      </div>
+          </div>
+  
+  </section>
+
+
+  </div>
+</div>
+
+  </div>
+
+</article>
+
+
+  </div>
+
+    
+  </div>
+
+      <footer class="footer container-fluid" role="contentinfo">
+        <div class="region region-footer">
+    <section id="block-footerleft" class="col-sm-5 col-sm-offset-0 col-md-3 col-md-offset-0 col-lg-2 col-lg-offset-0 block-type-a8b9928f-934d-4d21-bb7a-157928207935 block block-block-content block-block-contenta8b9928f-934d-4d21-bb7a-157928207935 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><address><strong>Northside ISD</strong><br>
+5900 Evers Road, San Antonio TX 78238<br>
+<abbr title="Phone">P:</abbr> 210-397-8500<br>
+info@nisd.net<br>
+<a href="https://www.nisd.net/sitemap.xml" style="color:white;">Sitemap</a></address>
+
+
+<p><a href="https://www.nisd.net/"><img alt="Returns you to the NISD homepage" src="./Programs _ Northside Independent School District_files/logo.svg"></a></p>
+</div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-footer-menu" id="block-footer" class="col-sm-5 col-sm-offset-2 col-md-3 col-md-offset-6 col-lg-3 col-lg-offset-7 block-type-footer">
+            
+  <h2 class="visually-hidden" id="block-footer-menu">Footer Right</h2>
+  
+
+        
+      <ul class="menu menu--footer nav">
+                      <li class="first">
+                                        <a href="https://www.nisd.net/safeline" data-drupal-link-system-path="node/8901">Emergency Information</a>
+              </li>
+                      <li>
+                                        <a href="https://www.nisd.net/privacy" data-drupal-link-system-path="node/24976">Privacy Policies</a>
+              </li>
+                      <li>
+                                        <a href="https://www.nisd.net/district/required-postings" data-drupal-link-system-path="node/8646">Required postings</a>
+              </li>
+                      <li class="last">
+                                        <a href="https://www.nisd.net/contact" data-drupal-link-system-path="node/11">Site Feedback</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+<section id="block-socialicons" class="col-sm-5 col-sm-offset-2 col-md-3 col-md-offset-6 col-lg-3 col-lg-offset-7 block-type-_b5ac9be-022b-445a-9633-6bd7594a90d3 block block-block-content block-block-content9b5ac9be-022b-445a-9633-6bd7594a90d3 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><a href="http://www.facebook.com/NorthsideISD"><svg aria-hidden="" class="svg-inline--fa fa-facebook-f fa-w-9 fa-3x social" title="Facebook social icon" aria-labelledby="svg-inline--fa-title-zXRG2RUps7ny" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><title id="svg-inline--fa-title-zXRG2RUps7ny">Facebook social icon</title><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg><!-- <i aria-hidden="" class="fab fa-facebook-f fa-3x social" title="Facebook social icon"></i> --></a>
+<span class="sr-only">Northside ISD Facebook</span>
+
+<a href="http://www.twitter.com/NISD"><svg aria-hidden="" class="svg-inline--fa fa-twitter fa-w-16 fa-3x social" title="Twitter social icon" aria-labelledby="svg-inline--fa-title-URl9qwTgdliq" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><title id="svg-inline--fa-title-URl9qwTgdliq">Twitter social icon</title><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i aria-hidden="" class="fab fa-twitter fa-3x social" title="Twitter social icon"></i> --></a>
+<span class="sr-only">Northside ISD Twitter</span>
+
+<a href="https://www.instagram.com/northsideisd/"><svg aria-hidden="" class="svg-inline--fa fa-instagram fa-w-14 fa-3x social" title="Instagram social icon" aria-labelledby="svg-inline--fa-title-8YW0Xh5e6lAN" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><title id="svg-inline--fa-title-8YW0Xh5e6lAN">Instagram social icon</title><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i aria-hidden="" class="fab fa-instagram fa-3x social" title="Instagram social icon"></i> --></a>
+<span class="sr-only">Northside ISD Instagram</span>
+
+<a href="http://www.youtube.com/NorthsideISD"><svg aria-hidden="" class="svg-inline--fa fa-youtube fa-w-18 fa-3x social" title="YouTube social icon" aria-labelledby="svg-inline--fa-title-0zfbbb9LoHpt" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><title id="svg-inline--fa-title-0zfbbb9LoHpt">YouTube social icon</title><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i aria-hidden="" class="fab fa-youtube fa-3x social" title="YouTube social icon"></i> --></a>
+<span class="sr-only">Northside ISD YouTube</span></div>
+      
+  </section>
+
+
+  </div>
+
+    </footer>
+  
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'de,el,es,fr,hi,id,it,iw,ja,ko,pl,ru,so,th,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="./Programs _ Northside Independent School District_files/f.txt"></script>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/15221","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"account":"UA-1050833-1","trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"data":{"extlink":{"extTarget":false,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"","extInclude":"","extCssExclude":".disable-extlink, .block-twitter-feed, .twitter-block, #block-socialicons","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":null}},"bootstrap":{"forms_has_error_value_toggle":1,"popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"user":{"uid":0,"permissionsHash":"6d3fda1b3acfd9e5fb7eddf904b677bd24aa659352ae182193bdba83e63bad1f"}}</script>
+<script src="./Programs _ Northside Independent School District_files/js_M6-4I9XFogyBumaZZjTchfslg0IBa_YUFXmrkfbYy3w.js.download"></script>
+<script src="./Programs _ Northside Independent School District_files/all.js.download" data-search-pseudo-elements=""></script>
+<script src="./Programs _ Northside Independent School District_files/v4-shims.js.download"></script>
+<script src="./Programs _ Northside Independent School District_files/js_oeSOHAvirZI0CUeJp_L9Q9Lu7f7RrBgMi9_5GWW81Rs.js.download"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"531ba1842f","applicationID":"460248409","transactionName":"ZwADYkRZDBcFU0RdCl5KIFVCUQ0KS0BRUwBvBgBVXl0=","queueTime":0,"applicationTime":20,"atts":"S0cAFAxDHxk=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./Programs _ Northside Independent School District_files/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><iframe frameborder="0" class="goog-te-menu-frame skiptranslate" title="Language Translate Widget" style="visibility: visible; box-sizing: content-box; width: 233px; height: 263px; display: none;" src="./Programs _ Northside Independent School District_files/saved_resource.html"></iframe></body></html>
